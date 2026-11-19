@@ -1,0 +1,23 @@
+
+SOFTWARE DEVELOPMENT TOOLS :-
+--------------------------
+
+1. powershell  ->  ms store
+2. psreadline (powershell module)  ->  powershell commmand
+3. tree-sitter.tree-sitter-cli  ->  winget
+4. Neovim.Neovim  ->  winget
+5. Starship.Starship  ->  winget
+6. junegunn.fzf  ->  winget
+7. BurntSushi.ripgrep.MSVC  ->  winget
+8. sharkdp.fd  ->  winget
+9. ajeetdsouza.zoxide  ->  winget
+10. eza-community.eza  ->  winget
+11. marlocarlo.psmux  ->  winget
+12. yazi  ->  winget
+
+SOFTWARE DEVELOPER STACK :-
+------------------------
+
+1. OpenJS.NodeJS.LTS  ->  winget
+2. Python.Python.3.14  ->  winget
+3. MSYS2.MSYS2  ->  winget
