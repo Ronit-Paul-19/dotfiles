@@ -1,0 +1,27 @@
+Clear-Host
+
+Invoke-Expression (&starship init powershell)
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+
+Set-Alias ls eza
+Set-Alias vim nvim
+
+function ltree {
+    eza --tree $args
+}
+
+function theme {
+  python "$HOME\.config\windows-11-theme-switcher\\switcher.py" $args
+}
+
+function cdf {
+  $dir = fd --type d | fzf
+    if ($dir) {
+      Set-Location $dir
+    }
+}
+
+Clear-Host
