@@ -93,7 +93,7 @@ winget install --id OpenJS.NodeJS.LTS --exact --source winget
 winget install --id Python.Python.3.14 --exact --source winget
 ```
 
-### C++ / MSYS2
+### MSYS2
 
 ```powershell
 winget install --id MSYS2.MSYS2 --exact --source winget
@@ -101,7 +101,33 @@ winget install --id MSYS2.MSYS2 --exact --source winget
 
 ---
 
-## 6. Add MSYS2 UCRT64 to PATH
+## 6. Set up the MSYS2 C++ toolchain
+
+Open the **MSYS2 UCRT64 terminal** and update the package database and system packages.
+
+### First update
+
+```bash
+pacman -Syu
+```
+
+If MSYS2 asks you to close the terminal, close it and reopen the **MSYS2 UCRT64** terminal.
+
+### Run the update again
+
+```bash
+pacman -Syu
+```
+
+Then install the required development tools and UCRT64 GCC toolchain:
+
+```bash
+pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+```
+
+---
+
+## 7. Add MSYS2 UCRT64 to PATH
 
 Add the following directory to the system `PATH`:
 
@@ -109,23 +135,25 @@ Add the following directory to the system `PATH`:
 C:\msys64\ucrt64\bin
 ```
 
+Close the terminal and reopen it after modifying `PATH`.
+
 ---
 
-## 7. Verify the C++ toolchain
+## 8. Verify the C++ toolchain
 
-Close the terminal, reopen it, and run:
+Run the following commands in PowerShell:
 
 ```powershell
 gcc --version
 g++ --version
 gdb --version
-which gcc
-which g++
+where.exe gcc
+where.exe g++
 ```
 
 ---
 
-## 8. Install the AI coding agent
+## 9. Install the AI coding agent
 
 Install OpenCode globally using npm:
 
