@@ -6,6 +6,7 @@ My developer environment dotfiles and setup guide.
 
 # AT FIRST INSTALL POWERSHELL 7 FROM MS STORE
 
+
 ---
 
 ## 0. Set up GlazeWM and YASB first
