@@ -32,7 +32,7 @@ winget install -e --id tree-sitter.tree-sitter-cli
 
 winget install --id Neovim.Neovim --exact --version 0.12.0
 
-git clone https://github.com/RonitPaul19/nvim.git "$env:LOCALAPPDATA\nvim"
+git clone https://github.com/Ronit-Paul-19/nvim.git "$env:LOCALAPPDATA\nvim"
 ```
 
 ---
