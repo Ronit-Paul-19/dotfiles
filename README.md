@@ -161,5 +161,5 @@ where.exe g++
 Install OpenCode globally using npm:
 
 ```powershell
-npm install --global opencode-ai
+npm install -g @opencode/cli
 ```
